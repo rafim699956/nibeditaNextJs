@@ -1,5 +1,5 @@
 "use client";
-import logo from "../../../public/sitelogo.png";
+import logo from "../../../../public/sitelogo.png";
 import { MdMenu } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";

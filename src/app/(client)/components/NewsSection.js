@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import newsImage from "../../../public/newsandevent.png";
+import newsImage from "../../../../public/newsandevent.png";
 import Link from 'next/link';
 
 const NewsSection = () => {

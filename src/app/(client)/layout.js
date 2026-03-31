@@ -1,10 +1,9 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
+import "../globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SmoothScroll from "./components/SmoothScroll";
 import AnimateSectionTitle from "./components/AnimateSectionTitle";
-import HeaderAnimation from "./components/HeaderAnimation";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",

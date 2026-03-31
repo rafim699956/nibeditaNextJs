@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import React from 'react'
-import nibedita from "../../../public/nibedita.png"
+import nibedita from "../../../../public/nibedita.png"
 import Link from 'next/link'
 import { FaArrowRightLong } from 'react-icons/fa6'
 

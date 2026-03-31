@@ -2,7 +2,7 @@ import React from 'react'
 import Pagination from '../components/Pagination';
 import SectionTitle from '../components/SectionTitle';
 import Image from 'next/image';
-import newsImage from "../../../public/newsandevent.png";
+import newsImage from "../../../../public/newsandevent.png";
 import AnimateSectionTitle from '../components/AnimateSectionTitle';
 
 

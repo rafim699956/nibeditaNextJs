@@ -1,6 +1,6 @@
 import React from "react";
-import latestnewsimg1 from "../../../public/latestnewsimg1.png";
-import latestnewsimg2 from "../../../public/latestnews2.png";
+import latestnewsimg1 from "../../../../public/latestnewsimg1.png";
+import latestnewsimg2 from "../../../../public/latestnews2.png";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 import Image from "next/image";

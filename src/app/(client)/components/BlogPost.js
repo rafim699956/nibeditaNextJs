@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import newsImage from "../../../public/newsandevent.png";
+import newsImage from "../../../../public/newsandevent.png";
 import React from "react";
 
 const BlogPost = ({ title = "Blog Title" }) => {

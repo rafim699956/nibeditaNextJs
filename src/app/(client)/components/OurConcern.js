@@ -2,10 +2,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaArrowRightLong } from "react-icons/fa6";
-import blogImg1 from "../../../public/blogimg1.png";
-import blogImg2 from "../../../public/blogimg2.png";
-import blogImg3 from "../../../public/blogimg3.png";
-import blogImg4 from "../../../public/blogimg4.png";
+import blogImg1 from "../../../../public/blogimg1.png";
+import blogImg2 from "../../../../public/blogimg2.png";
+import blogImg3 from "../../../../public/blogimg3.png";
+import blogImg4 from "../../../../public/blogimg4.png";
 import SectionTitle from "./SectionTitle";
 import OurConcernAnimation from "./OurConcernAnimation";
 

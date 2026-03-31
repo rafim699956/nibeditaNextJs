@@ -4,13 +4,13 @@ import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
-import "../globals.css";
-import heroBanner1 from "../../../public/herobanner1.png";
-import heroBanner2 from "../../../public/herobanner2.png";
-import heroBanner3 from "../../../public/herobanner3.png";
-import heroBanner4 from "../../../public/herobanner4.png";
-import heroBanner5 from "../../../public/herobanner5.png";
-import rightArrow from "../../../public/rightarrow.png";
+import "../../globals.css";
+import heroBanner1 from "../../../../public/herobanner1.png";
+import heroBanner2 from "../../../../public/herobanner2.png";
+import heroBanner3 from "../../../../public/herobanner3.png";
+import heroBanner4 from "../../../../public/herobanner4.png";
+import heroBanner5 from "../../../../public/herobanner5.png";
+import rightArrow from "../../../../public/rightarrow.png";
 
 const HomeHero = () => {
     const homeHero = [

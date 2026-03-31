@@ -1,7 +1,7 @@
 import React from "react";
 import Pagination from "./Pagination";
 import Image from "next/image";
-import newsImage from "../../../public/newsandevent.png";
+import newsImage from "../../../../public/newsandevent.png";
 import Link from "next/link";
 import { FaArrowRightLong } from "react-icons/fa6";
 

@@ -1,6 +1,6 @@
 import React from "react";
-import image1 from "../../../public/whatwedo.png";
-import image2 from "../../../public/whoweare.png";
+import image1 from "../../../../public/whatwedo.png";
+import image2 from "../../../../public/whoweare.png";
 import OurEssence from "./OurEssence";
 
 const WholisticCare = () => {

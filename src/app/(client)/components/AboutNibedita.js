@@ -1,6 +1,6 @@
 import Image from "next/image";
-import nibedita from "../../../public/nibedita.png";
-import aboutImage from "../../../public/aboutnibedita.png"
+import nibedita from "../../../../public/nibedita.png";
+import aboutImage from "../../../../public/aboutnibedita.png"
 import Pagination from "./Pagination";
 
 const AboutNibedita = () => {

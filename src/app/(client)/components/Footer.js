@@ -1,6 +1,6 @@
 "use client";
-import footerLogo from "../../../public/footerlogo.png";
-import footerShape from "../../../public/footershape.png";
+import footerLogo from "../../../../public/footerlogo.png";
+import footerShape from "../../../../public/footershape.png";
 import { FaFacebookF, FaYoutube } from "react-icons/fa6";
 import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
