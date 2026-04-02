@@ -1,29 +1,18 @@
 "use client";
-import { useLayoutEffect } from "react";
+
 import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
 
 const HeaderAnimation = () => {
-    useLayoutEffect(() => {
-        const tl = gsap.timeline({
-            defaults: {
-                ease: "power4.out",
-                duration: 1
-            }
-        });
-        tl.from(".logo", {
-            y: -50,
-            opacity: 0,
-        });
-        tl.from(".header-menu ul li", {
+    useGSAP(()=>{
+        const tl = gsap.timeline();
+        tl.from(".logo ,.header-menu ul li, .header-btn", {
             y: -30,
             opacity: 0,
             stagger: 0.15,
+            direction: 1    
         });
-        tl.from(".header-btn", {
-            y: -10,
-            opacity: 0,
-        });
-    }, []);
+    })
     return null;
 };
 

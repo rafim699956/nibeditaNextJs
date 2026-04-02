@@ -1,10 +1,11 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 const OurConcernAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.utils.toArray(".our-concern-item").forEach((item) => {
             gsap.from(item, {
                 y: 80,
@@ -14,12 +15,11 @@ const OurConcernAnimation = () => {
                 scrollTrigger: {
                     trigger: item,
                     start: "top 70%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true
+                    scrub: 1.2
                 },
             });
         });
-    }, []);
+    })
     return null;
 };
 

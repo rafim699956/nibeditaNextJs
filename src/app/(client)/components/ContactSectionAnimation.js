@@ -1,11 +1,11 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
 gsap.registerPlugin(ScrollTrigger);
 
 const ContactSectionAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.from(".contact-form", {
             x: -20,
             opacity: 0,
@@ -14,7 +14,7 @@ const ContactSectionAnimation = () => {
                 trigger: ".contact-us-section",
                 start: "top 60%",
                 end: "bottom 100%",
-                scrub: true,
+                scrub: 1.2,
             }
         })
         gsap.from(".contact-info", {
@@ -25,7 +25,7 @@ const ContactSectionAnimation = () => {
                 trigger: ".contact-us-section",
                 start: "top 60%",
                 end: "bottom 20%",
-                scrub: true,
+                scrub: 1.2,
             }
         })
         gsap.from(".map", {
@@ -37,10 +37,10 @@ const ContactSectionAnimation = () => {
                 trigger: ".contact-us-section",
                 start: "top 60%",
                 end: "bottom 100%",
-                scrub: true,
+                scrub: 1.2,
             }
         })
-    }, []);
+    })
     return null;
 }
 

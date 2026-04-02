@@ -1,12 +1,13 @@
 "use client";
 
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const LatestBlogAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.from(".letest-news-item", {
             y: 50,
             opacity: 0,
@@ -16,10 +17,10 @@ const LatestBlogAnimation = () => {
             scrollTrigger: {
                 trigger: ".letest-news-wrapper",
                 start: "top 80%",
-                scrub: true,
+                scrub: 1.2,
             },
         });
-    }, []);
+    })
     return null;
 }
 

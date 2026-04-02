@@ -1,11 +1,12 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const TeamMemberAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.from(".team-member-item", {
             y: 50,
             opacity: 0,
@@ -16,10 +17,10 @@ const TeamMemberAnimation = () => {
             scrollTrigger: {
                 trigger: ".team-member-wrapper",
                 start: "top 80%",
-                scrub: true,
+                scrub: 1.2,
             },
         });
-    }, []);
+    })
     return null;
 };
 

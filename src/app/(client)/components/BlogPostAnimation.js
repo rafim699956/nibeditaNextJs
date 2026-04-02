@@ -1,10 +1,11 @@
 "use client";
+import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useLayoutEffect } from "react";
+
 gsap.registerPlugin(ScrollTrigger);
 export const BlogPostAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.from(".blog-post", {
             y: 50,
             opacity: 0,
@@ -14,10 +15,11 @@ export const BlogPostAnimation = () => {
 
             scrollTrigger: {
                 trigger: ".blog-section",
+                scroller: "body",
                 end: "bottom 50%",
-                scrub: true,
+                scrub: 1.2,
             },
         });
-    }, []);
+    })
     return null;
 }

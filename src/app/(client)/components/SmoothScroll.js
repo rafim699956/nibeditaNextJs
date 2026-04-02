@@ -1,9 +1,10 @@
 "use client";
 import { useEffect } from "react";
 import Lenis from "@studio-freight/lenis";
+import { useGSAP } from "@gsap/react";
 
 const SmoothScroll = ({ children }) => {
-    useEffect(() => {
+    useGSAP(() => {
         const lenis = new Lenis({
             duration: 3.4,
             smooth: true,
@@ -15,7 +16,7 @@ const SmoothScroll = ({ children }) => {
             requestAnimationFrame(raf);
         }
         requestAnimationFrame(raf);
-    }, []);
+    })
     return children;
 };
 

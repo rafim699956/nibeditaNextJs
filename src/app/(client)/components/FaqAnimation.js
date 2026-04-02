@@ -1,11 +1,12 @@
 "use client";
+import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useLayoutEffect } from 'react'
 gsap.registerPlugin(ScrollTrigger);
 
 const FaqAnimation = () => {
-    useLayoutEffect(() => {
+    useGSAP(() => {
         gsap.utils.toArray(".faq-item").forEach((faqIetm) => {
             gsap.from(faqIetm, {
                 y: 20,
@@ -16,14 +17,12 @@ const FaqAnimation = () => {
                 scrollTrigger: {
                     trigger: ".faq-section",
                     start: "top 60%",
-                    toggleActions: "play reverse play reverse",
-                    scrub: true
+                    scrub: 1.2
                 },
 
             })
         })
-
-    }, [])
+    })
     return null;
 }
 
