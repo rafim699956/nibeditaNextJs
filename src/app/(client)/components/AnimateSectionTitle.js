@@ -16,7 +16,8 @@ const AnimateSectionTitle = () => {
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: el,
-                    scrub: 1.2
+                    scrub: 1.2,
+                    start: "top 80%",
                 },
             });
         });
