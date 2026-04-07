@@ -28,7 +28,6 @@ const SectionTitle = ({
             <p className={`lg:text-[1.25rem] lg:leading-8 ${style.description}`}>
                 {description}
             </p>
-            <AnimateSectionTitle />
         </div>
     );
 };

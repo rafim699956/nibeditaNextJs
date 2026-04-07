@@ -3,6 +3,7 @@ import "../globals.css";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import SmoothScroll from "./components/SmoothScroll";
+import AnimateSectionTitle from "./components/AnimateSectionTitle";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
           <Header />
           {children}
           <Footer />
+          <AnimateSectionTitle />
         </SmoothScroll>
       </body>
     </html>
