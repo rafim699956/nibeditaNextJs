@@ -6,7 +6,6 @@ import { BsTwitterX } from "react-icons/bs";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import FooterAnimation from "./FooterAnimation";
 
 const Footer = () => {
     const pathname = usePathname();
@@ -60,7 +59,7 @@ const Footer = () => {
             <h6 className="text-white">Our services</h6>
             <ul className="space-y-2 lg:space-y-4">
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/physiotherapy">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/nibedita-physiotherapy-center">
                   Physiotherapy
                 </Link>
               </li>
@@ -70,12 +69,12 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/mental-health">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/nibedita-mental-health-center">
                   Mental Health
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/canteen">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/nibedita-catering-service">
                   Canteen
                 </Link>
               </li>
@@ -100,7 +99,7 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/career">
                   Career
                 </Link>
               </li>
@@ -110,22 +109,22 @@ const Footer = () => {
             <h6 className="text-white">Company</h6>
             <ul className="space-y-2 lg:space-y-4">
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/contact-us">
                   Contact us
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/blogs">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/news-and-events">
                   Blogs
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/privacy-policy">
                   Privacy policy
                 </Link>
               </li>
               <li>
-                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="">
+                <Link className="text-base leading-6.5 text-[#E5E5E5]" href="/terms-and-conditions">
                   Terms and conditions
                 </Link>
               </li>
@@ -144,7 +143,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <FooterAnimation />
     </footer>
   );
 };

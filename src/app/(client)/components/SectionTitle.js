@@ -1,4 +1,5 @@
 import React from "react";
+import AnimateSectionTitle from "./AnimateSectionTitle";
 const SectionTitle = ({
     title = "Section Title",
     description = "Lorem ipsum quia dolor sit porro quisquam est qui amet consectetur adipisci, sed quia duis aute irure dolor in reprehenderit dolore magna aliqua, porro quisquan est qui nisi ut aliquid ex ea commodo. Culpa quia officia deserunt mollit anim id est laborum",
@@ -27,6 +28,7 @@ const SectionTitle = ({
             <p className={`lg:text-[1.25rem] lg:leading-8 ${style.description}`}>
                 {description}
             </p>
+            <AnimateSectionTitle />
         </div>
     );
 };

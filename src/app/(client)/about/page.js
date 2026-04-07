@@ -6,7 +6,7 @@ import Coundown from "../components/Coundown";
 import Faq from "../components/Faq";
 import JoinUs from "../components/JoinUs";
 
-const AboutUs = () => {
+const AboutPage = () => {
   return (
     <>
       <AboutNibedita />
@@ -19,4 +19,4 @@ const AboutUs = () => {
   );
 };
 
-export default AboutUs;
+export default AboutPage;

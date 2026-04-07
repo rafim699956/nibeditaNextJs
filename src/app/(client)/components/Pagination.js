@@ -6,6 +6,7 @@ import { CiLocationOn } from "react-icons/ci";
 const Pagination = () => {
   const pathname = usePathname();
   const routeText = pathname.slice(1);
+  const url = routeText.split("-").join(" ");
   return (
     <div className="flex items-center gap-2">
       <Link
@@ -17,7 +18,7 @@ const Pagination = () => {
       </Link>
       <span className="text-sm font-medium leading-5 text-[#7E4883]">/</span>
       <span className="capitalize text-sm font-medium leading-5 text-[#7E4883]">
-        {routeText}
+        {url}
       </span>
     </div>
   );

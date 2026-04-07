@@ -1,7 +1,7 @@
-const Career = () => {
+const CareerPage = () => {
   return (
-    <div>Career</div>
+    <div>CareerPage</div>
   )
 }
 
-export default Career
+export default CareerPage

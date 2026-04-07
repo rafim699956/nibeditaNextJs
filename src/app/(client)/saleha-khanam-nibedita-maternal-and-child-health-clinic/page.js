@@ -4,7 +4,7 @@ import OurVisionMission from '../components/OurVisionMission'
 import OurServices from '../components/OurServices'
 import OurCoreValue from '../components/OurCoreValue'
 
-const page = () => {
+const ChildHealthPage = () => {
     return (
         <>
             <CommonHero title="Dedicated to your health, committed to your trust" />
@@ -15,4 +15,4 @@ const page = () => {
     )
 }
 
-export default page
+export default ChildHealthPage

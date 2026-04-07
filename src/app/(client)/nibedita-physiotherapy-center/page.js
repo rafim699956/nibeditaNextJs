@@ -4,7 +4,7 @@ import OurVisionMission from '../components/OurVisionMission'
 import OurServices from '../components/OurServices'
 import OurCoreValue from '../components/OurCoreValue'
 
-const page = () => {
+const PhysiotherapyPage = () => {
     return (
         <>
             <CommonHero title="Where Every Meal Feels Like Home" />
@@ -15,4 +15,4 @@ const page = () => {
     )
 }
 
-export default page
+export default PhysiotherapyPage

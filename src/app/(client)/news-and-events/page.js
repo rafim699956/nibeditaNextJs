@@ -1,7 +1,7 @@
 import NewsAndEvents from "../components/NewsAndEvents"
 import NewsSection from "../components/NewsSection"
 
-const NewsEvent = () => {
+const NewsEventPage = () => {
   return (
     <>
       <NewsAndEvents />
@@ -10,4 +10,4 @@ const NewsEvent = () => {
   )
 }
 
-export default NewsEvent
+export default NewsEventPage

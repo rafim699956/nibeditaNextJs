@@ -1,8 +1,8 @@
 import React from 'react'
 import OurTeamMember from '../components/OurTeamMember'
 
-const TeamDetail = () => {
+const TeamDetailPage = () => {
   return <OurTeamMember />
 }
 
-export default TeamDetail
+export default TeamDetailPage

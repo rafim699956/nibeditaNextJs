@@ -6,7 +6,7 @@ import newsImage from "../../../../public/newsandevent.png";
 import AnimateSectionTitle from '../components/AnimateSectionTitle';
 
 
-const page = () => {
+const GalleryPage = () => {
     return (
         <>
             <section className="pt-10 pb-20 md:pb-30 lg:pb-52 bg-linear-to-b from-[#EDDEF0] from-[66.66%] to-[#FFFFFF] to-[100.88%]">
@@ -35,4 +35,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default GalleryPage;
