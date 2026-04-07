@@ -7,17 +7,23 @@ gsap.registerPlugin(ScrollTrigger);
 const OurConcernAnimation = () => {
     useGSAP(() => {
         gsap.utils.toArray(".our-concern-item").forEach((item) => {
-            gsap.from(item, {
-                y: 80,
-                opacity: 0,
-                duration: 0.8,
-                ease: "power3.out",
-                scrollTrigger: {
-                    trigger: item,
-                    start: "top 70%",
-                    scrub: 1.2
+            gsap.fromTo(
+                item,
+                {
+                    y: 80,
+                    opacity: 0,
                 },
-            });
+                {
+                    y: 0,
+                    opacity: 1,
+                    duration: 0.8,
+                    scrollTrigger: {
+                        trigger: item,
+                        start: "top 90%",
+                        scrub: 2,
+                    },
+                }
+            );
         });
     })
     return null;

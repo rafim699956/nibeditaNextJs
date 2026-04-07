@@ -14,7 +14,7 @@ const TimelineAnimation = () => {
                 scrollTrigger: {
                     trigger: itemRight,
                     start: "top 80%",
-                    toggleActions: "play reverse play reverse",
+                    scrub: 1,
                 },
             });
         });
@@ -26,13 +26,13 @@ const TimelineAnimation = () => {
                 scrollTrigger: {
                     trigger: itemLeft,
                     start: "top 80%",
-                    toggleActions: "play reverse play reverse",
+                    scrub: 1,
                 },
             });
         });
-        gsap.fromTo(".timeline-middle-line",{
-                height: "0%"
-            },
+        gsap.fromTo(".timeline-middle-line", {
+            height: "0%"
+        },
             {
                 height: "100%",
                 ease: "none",

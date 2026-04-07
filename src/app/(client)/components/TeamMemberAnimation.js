@@ -8,16 +8,15 @@ gsap.registerPlugin(ScrollTrigger);
 const TeamMemberAnimation = () => {
     useGSAP(() => {
         gsap.from(".team-member-item", {
-            y: 50,
+            y: 30,
             opacity: 0,
             duration: 1,
             stagger: 0.2,
-            ease: "power3.out",
 
             scrollTrigger: {
-                trigger: ".team-member-wrapper",
+                trigger: ".team-member-item",
                 start: "top 80%",
-                scrub: 1.2,
+                scrub: 0.2,
             },
         });
     })
