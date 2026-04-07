@@ -76,10 +76,6 @@
     @apply h-39.5;
   }
 
-  section {
-    @apply py-10 md:py-15 lg:py-31;
-  }
-
   .custom-pagination .swiper-pagination-bullet {
     @apply size-4 border border-[#B579BC] bg-primary-100 inline-block rounded-full mr-2.5 opacity-30;
   }
@@ -97,13 +93,10 @@
   }
 }
 
-@layer utilities {
-  .container {
-    @apply lg:max-w-318 px-3 mx-auto;
-  }
-}
-
 @layer components {
+  section {
+    @apply py-10 md:py-15 lg:py-31;
+  }
   .swiper-wrapper {
     align-items: stretch !important;
   }
@@ -135,5 +128,10 @@
     100% {
       transform: translateX(0);
     }
+  }
+}
+@layer utilities {
+  .container {
+    @apply lg:max-w-318 px-3 mx-auto;
   }
 }
